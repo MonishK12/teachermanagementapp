@@ -1,9 +1,10 @@
+'use client'
 import React from 'react'
 import EditTeacherForm from '@/app/teacher/_components/editteacherform'
 
 const getTeacherById = async(id : string)=>{
     try {
-        const res = await fetch(`${process.env.CLIENT_URL}/api/teacherform/${id}`,{
+        const res = await fetch(`/api/teacherform/${id}`,{
             cache: "no-cache",
         });
         if(!res.ok){
