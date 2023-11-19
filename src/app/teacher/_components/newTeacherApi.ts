@@ -26,7 +26,7 @@ export async function editTeacher(id:string,inputData: z.infer<typeof addnewteac
   }
 
 export async function getAllTeacher() {
-    const res = await fetch("http://localhost:3000/api/teacherform/", {
+    const res = await fetch(`${process.env.CLIENT_URL}/api/teacherform/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -6,7 +6,7 @@ export default function Navbar() {
       <Link className="text-white font-bold" href={"/"}>
         Teacher Management Application.
       </Link>
-      <Link className="bg-white p-2" href={"http://localhost:3000/teacher/addnewteacherform"}>
+      <Link className="bg-white p-2" href={`${process.env.CLIENT_URL}/teacher/addnewteacherform`}>
         Add New Teacher
       </Link>
     </nav>
