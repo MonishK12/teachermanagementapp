@@ -55,8 +55,7 @@ const form = useForm<Input>({
     Email:Email,
     MobileNumber:MobileNumber,
     Age:Age,
-    TotalClass:TotalClass,
-    Dob:Dob
+    TotalClass:TotalClass
   },
 });
 
@@ -70,7 +69,7 @@ async function onSubmit(data: Input) {
   }
   return (
     <div className="align-middle justify-center">
-      <Card className="w-[800px]">
+      <Card className="w-[730px]">
         <CardHeader>
           <CardTitle>Add New Teacher</CardTitle>
         </CardHeader>
