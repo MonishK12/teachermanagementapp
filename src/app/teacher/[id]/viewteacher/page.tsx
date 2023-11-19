@@ -7,7 +7,7 @@ export default async function Transportlist() {
   return (
     <>
       {newTeacherData.map((p: any) => (
-       <div className="flex items-center h-screen w-full justify-center">
+       <div className="flex items-center h-screen w-full justify-center" key={p._id}>
 
        <div className="max-w-xs">
            <div className="bg-white shadow-xl rounded-lg py-3">
