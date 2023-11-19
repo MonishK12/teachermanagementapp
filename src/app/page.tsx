@@ -33,7 +33,7 @@ export default async function Teacherlist() {
     <>
   
      {newTeacherData.map((p:any) => (
-    <div className=' m-5 bg-slate-300  flex rounded-lg justify-between'>
+    <div className=' m-5 bg-slate-300  flex rounded-lg justify-between' key={p._id}>
         {/* <div className='p-5'>{p.invoiceid}</div> */}
         <div className='p-5'>{p.Name}</div>
         <div className='p-5'>{p.MobileNumber}</div>
