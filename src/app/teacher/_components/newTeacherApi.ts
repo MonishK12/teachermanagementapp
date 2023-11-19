@@ -2,7 +2,7 @@ import { addnewteacherSchema } from '@/validators/teacherAuth';
 import { z } from 'zod';
 
 export async function createNewTeacher(inputData:z.infer<typeof addnewteacherSchema>) {
-    const res = await fetch("/api/teacherform",{
+    const res = await fetch(`${process.env.CLIENT_URL}/api/teacherform`,{
         method: "POST",
         headers:{
             "content-type":"application/json",
@@ -14,7 +14,7 @@ export async function createNewTeacher(inputData:z.infer<typeof addnewteacherSch
 }
 
 export async function editTeacher(id:string,inputData: z.infer<typeof addnewteacherSchema>) {
-    const res = await fetch(`/api/teacherform/${id}`, {
+    const res = await fetch(`${process.env.CLIENT_URL}/api/teacherform/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
