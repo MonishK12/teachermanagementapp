@@ -62,7 +62,7 @@ const form = useForm<Input>({
 
 async function onSubmit(data: Input) {
     // alert(JSON.stringify(data, null, 4));
-    // console.log(data);
+     console.log(data);
     const res= await editTeacher( TeacherId! ,data);
     const responseData = await res.json();
     console.log(responseData);
